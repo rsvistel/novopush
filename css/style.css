@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
+.first-section {
+  background-image: url("../img/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  background-position: top center; }
+  .first-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .first-section .row .col-md-12 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 15px; }
+  .first-section .logo-left h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    cursor: pointer; }
+  .first-section .menu-right ul {
+    display: flex;
+    margin-bottom: 0; }
+    .first-section .menu-right ul li {
+      list-style-type: none;
+      margin: 0 20px;
+      cursor: pointer; }
+      .first-section .menu-right ul li h6 {
+        color: white;
+        font-family: "Raleway", sans-serif;
+        text-transform: capitalize;
+        font-size: 18px; }
+  .first-section .text-half-section {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    width: 36%;
+    padding: 15px; }
+    .first-section .text-half-section h2 {
+      font-weight: 900;
+      font-size: 35px;
+      margin-bottom: 55px;
+      text-transform: uppercase; }
+    .first-section .text-half-section h6 {
+      font-size: 17px;
+      line-height: 28px;
+      margin-bottom: 38px; }
+
+.button-first-section {
+  color: #67649d;
+  background: white;
+  border-radius: 14px;
+  border: 0;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  padding: 13px 17px; }
+  .button-first-section .upper {
+    text-transform: uppercase; }
+
+.button-first-section-1 {
+  margin-right: 25px; }
+
+.second-section {
+  margin-bottom: 7%; }
+  .second-section .support h2 {
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    color: #67649d;
+    text-align: center; }
+  .second-section ul {
+    display: flex;
+    justify-content: center; }
+    .second-section ul li {
+      list-style-type: none;
+      margin-right: 80px; }
+      .second-section ul li object {
+        width: 75px; }
+
+.third-section {
+  background-image: url("../img/3-section.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  background-position: top center;
+  display: flex;
+  align-items: center; }
+  .third-section .text-half-third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%; }
+    .third-section .text-half-third-section h2 {
+      font-weight: 900;
+      font-size: 35px;
+      margin-bottom: 45px;
+      text-transform: uppercase; }
+    .third-section .text-half-third-section h5 {
+      line-height: 30px;
+      font-weight: 400;
+      font-size: 18.5px;
+      margin-bottom: 20px; }
+    .third-section .text-half-third-section h2, .third-section .text-half-third-section h5 {
+      font-family: "Raleway", sans-serif;
+      color: #67649d; }
+  .third-section .img-right-third-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .third-section .img-right-third-section img {
+      width: 80%; }
+
+.button-third-section {
+  background-color: #67649d;
+  color: #ffffff;
+  width: 37%; }
+
+@media (max-width: 768px) {
+  .second-section .support h2 {
+    font-size: 27px; }
+
+  .second-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0; }
+    .second-section ul li {
+      margin-right: 25px; }
+      .second-section ul li:last-child {
+        margin-right: 0; }
+      .second-section ul li object {
+        width: 65px; }
+
+  .third-section {
+    min-height: 130vh; }
+    .third-section .img-right-third-section {
+      margin-top: 30px; }
+      .third-section .img-right-third-section img {
+        width: 100%; } }
+@media (min-width: 769px) and (max-width: 1200px) {
+  .third-section .col-md-5.text-half-third-section {
+    max-width: 60%;
+    flex: 0 0 60%; }
+  .third-section .col-md-7.img-right-third-section {
+    max-width: 39%;
+    flex: 0 0 39%; }
+    .third-section .col-md-7.img-right-third-section img {
+      width: 100%; } }
+@media (max-width: 320px) {
+  .second-section ul li object {
+    width: 48px; } }
+
+/*# sourceMappingURL=style.css.map */
