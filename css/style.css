@@ -13,6 +13,26 @@ body {
   min-height: 100vh;
   font-family: "Raleway", sans-serif; }
 
+.title-sections {
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 45px;
+  margin-bottom: 2rem;
+  color: #67649d;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 4rem; }
+
+.section-bg-image {
+  background-image: url("../img/3-section.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  background-position: top center;
+  display: flex;
+  align-items: center; }
+
 .first-section {
   background-image: url("../img/background.png");
   background-size: contain;
@@ -94,38 +114,30 @@ body {
       .second-section ul li object {
         width: 75px; }
 
-.third-section {
-  background-image: url("../img/3-section.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 110vh;
-  background-position: top center;
+.third-section .text-half-third-section {
   display: flex;
-  align-items: center; }
-  .third-section .text-half-third-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 10%; }
-    .third-section .text-half-third-section h2 {
-      font-weight: 900;
-      font-size: 35px;
-      margin-bottom: 45px;
-      text-transform: uppercase; }
-    .third-section .text-half-third-section h5 {
-      line-height: 30px;
-      font-weight: 400;
-      font-size: 18.5px;
-      margin-bottom: 20px; }
-    .third-section .text-half-third-section h2, .third-section .text-half-third-section h5 {
-      font-family: "Raleway", sans-serif;
-      color: #67649d; }
-  .third-section .img-right-third-section {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .third-section .img-right-third-section img {
-      width: 80%; }
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10%; }
+  .third-section .text-half-third-section h2 {
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 45px;
+    text-transform: uppercase; }
+  .third-section .text-half-third-section h5 {
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 18.5px;
+    margin-bottom: 20px; }
+  .third-section .text-half-third-section h2, .third-section .text-half-third-section h5 {
+    font-family: "Raleway", sans-serif;
+    color: #67649d; }
+.third-section .img-right-third-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .third-section .img-right-third-section img {
+    width: 80%; }
 
 .button-third-section {
   background-color: #67649d;
@@ -166,18 +178,12 @@ body {
 @media (max-width: 320px) {
   .second-section ul li object {
     width: 48px; } }
-#features h2 {
-  font-weight: 900;
-  font-size: 35px;
-  margin-bottom: 45px;
-  margin-bottom: 2rem; }
-#features h2, #features h4 {
+#features h4 {
+  font-size: 20px;
   color: #67649d;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900; }
-#features h4 {
-  font-size: 20px; }
 #features p {
   font-size: 17px;
   text-align: center;
@@ -196,22 +202,7 @@ body {
   .features-card {
     margin-bottom: 3rem; } }
 .client-section {
-  background-image: url("../img/3-section.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 110vh;
-  background-position: top center;
-  display: flex;
-  align-items: center;
   color: #67649d; }
-  .client-section h2 {
-    font-weight: 900;
-    font-size: 35px;
-    margin-bottom: 45px;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 3rem; }
 
 .client .card {
   border: none;
@@ -247,14 +238,6 @@ body {
   display: flex;
   align-items: center;
   color: #67649d; }
-  .pricing-section h2 {
-    font-weight: 900;
-    font-size: 35px;
-    margin-bottom: 45px;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 3rem; }
 
 .pricing .card {
   border: none;
@@ -290,5 +273,116 @@ body {
   padding: 13px 17px;
   width: 70%;
   margin: 2rem auto 1rem auto; }
+
+.numbers-section-items {
+  background: #FFFFFF;
+  padding: 3rem;
+  text-align: center;
+  color: #67649d;
+  font-size: 25px; }
+  .numbers-section-items span {
+    font-weight: 900; }
+  .numbers-section-items img {
+    padding-bottom: 2rem; }
+  .numbers-section-items p {
+    padding-top: 0.5rem; }
+
+.numbers-section-item:first-child {
+  border-right: 2px solid #67649d; }
+
+.numbers-section-item:last-child {
+  border-left: 2px solid #67649d; }
+
+@media (max-width: 991px) {
+  .numbers-section-item {
+    margin-bottom: 2rem; }
+
+  .numbers-section-item:first-child, .numbers-section-item:last-child {
+    border: none; } }
+.choose-section {
+  color: #67649d; }
+  .choose-section h2 {
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 2rem; }
+
+.choose-section-left {
+  padding-top: 1rem; }
+  .choose-section-left h5 {
+    padding-right: 2rem;
+    font-size: 20px;
+    color: #000000; }
+
+.choose-section-right {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 29px 0 rgba(89, 89, 89, 0.53);
+  padding: 1rem;
+  text-align: center;
+  font-size: 20px; }
+  .choose-section-right span {
+    font-weight: 900; }
+
+@media (max-width: 991px) {
+  .choose-section-left {
+    margin-bottom: 3rem; } }
+.footer-section {
+  background-image: url("../img/footer.png");
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff; }
+  .footer-section h4 {
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    padding-bottom: 4rem;
+    text-align: center; }
+  .footer-section ul {
+    padding-top: 3rem;
+    list-style: none;
+    font-size: 20px; }
+
+.title-sections-footer {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 19%; }
+
+.footer-section-btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .footer-section-btn-box button {
+    padding: 20px 30px;
+    font-size: 20px; }
+
+.copyright {
+  margin: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 991px) {
+  .footer-section-links {
+    text-align: center; }
+
+  .title-sections-footer {
+    margin-top: 33%; } }
+@media (max-width: 692px) {
+  .footer-section-btn-box {
+    display: block;
+    text-align: center;
+    margin: 0 auto; }
+    .footer-section-btn-box .button-first-section {
+      margin-right: 0;
+      margin-bottom: 2rem; } }
+@media (max-width: 320px) {
+  .title-sections-footer {
+    margin-top: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
