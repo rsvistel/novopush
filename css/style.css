@@ -195,7 +195,7 @@ body {
 @media (max-width: 767px) {
   .features-card {
     margin-bottom: 3rem; } }
-.pricing-section {
+.client-section {
   background-image: url("../img/3-section.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -204,6 +204,57 @@ body {
   display: flex;
   align-items: center;
   color: #67649d; }
+  .client-section h2 {
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 45px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3rem; }
+
+.client .card {
+  border: none;
+  border-radius: 1.3rem;
+  box-shadow: 0 2px 2px 0 rgba(89, 89, 89, 0.3); }
+  .client .card .card-title {
+    margin: 0.5rem 0;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 900; }
+  .client .card .card-date {
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 1.5rem; }
+  .client .card p {
+    font-size: 17px;
+    color: #000000;
+    padding-bottom: 40%; }
+  .client .card .fa-star {
+    font-size: 30px; }
+
+.star-muted {
+  opacity: 0.4; }
+
+@media (max-width: 767px) {
+  .client .card {
+    margin-bottom: 2rem; } }
+.pricing-section {
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  color: #67649d; }
+  .pricing-section h2 {
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 45px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3rem; }
 
 .pricing .card {
   border: none;

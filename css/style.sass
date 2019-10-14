@@ -206,7 +206,7 @@ body
     .features-card
       margin-bottom: 3rem
 
-.pricing-section
+.client-section
   background-image: url("../img/3-section.png")
   background-size: contain
   background-repeat: no-repeat
@@ -215,6 +215,61 @@ body
   display: flex
   align-items: center
   color: $primary-color
+  h2
+    font-weight: 900
+    font-size: 35px
+    margin-bottom: 45px
+    margin-bottom: 2rem
+    text-align: center
+    text-transform: uppercase
+    padding-bottom: 3rem
+
+.client
+  .card
+    border: none
+    border-radius: 1.3rem
+    box-shadow: 0 2px 2px 0 rgba(89, 89, 89, 0.3)
+    .card-title
+      margin: 0.5rem 0
+      font-size: 30px
+      letter-spacing: .1rem
+      font-weight: 900
+    .card-date
+      font-weight: 900
+      font-size: 25px
+      margin-bottom: 1.5rem
+    p
+      font-size: 17px
+      color: #000000
+      padding-bottom: 40%
+    .fa-star
+      font-size: 30px
+
+.star-muted
+  opacity: 0.4
+
+@media (max-width: 767px)
+    .client
+      .card
+          margin-bottom: 2rem
+
+.pricing-section
+  //background-image: url("../img/3-section.png")
+  background-size: contain
+  background-repeat: no-repeat
+  min-height: 110vh
+  background-position: top center
+  display: flex
+  align-items: center
+  color: $primary-color
+  h2
+    font-weight: 900
+    font-size: 35px
+    margin-bottom: 45px
+    margin-bottom: 2rem
+    text-align: center
+    text-transform: uppercase
+    padding-bottom: 3rem
 
 .pricing
   .card
@@ -223,13 +278,11 @@ body
     transition: all 0.2s
     // box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1)
     box-shadow: 0 4px 29px 0 rgba(89, 89, 89, 0.53)
-
   .card-title
     margin: 0.5rem 0
     font-size: 35px
     letter-spacing: .1rem
     font-weight: 900
-
   .card-price
     font-size: 3rem
     margin: 0
