@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
+h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif; }
+
 .first-section {
   background-image: url("../img/background.png");
   background-size: contain;
@@ -152,5 +166,78 @@
 @media (max-width: 320px) {
   .second-section ul li object {
     width: 48px; } }
+#features h2 {
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 45px;
+  margin-bottom: 2rem; }
+#features h2, #features h4 {
+  color: #67649d;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900; }
+#features h4 {
+  font-size: 20px; }
+#features p {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 2rem; }
+#features .row {
+  padding-top: 3rem; }
+#features .features-card h4 {
+  font-size: 20px; }
+#features img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3rem; }
+
+@media (max-width: 767px) {
+  .features-card {
+    margin-bottom: 3rem; } }
+.pricing-section {
+  background-image: url("../img/3-section.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  color: #67649d; }
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 29px 0 rgba(89, 89, 89, 0.53); }
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  font-weight: 900; }
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1rem; }
+  .pricing .card-price .period {
+    font-size: 20px; }
+.pricing ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+  text-align: center;
+  font-size: 20px; }
+.pricing .text-muted {
+  opacity: 0.7;
+  text-decoration: line-through; }
+.pricing .button-pricing-section {
+  color: #ffffff;
+  background: #67649d;
+  border-radius: 14px;
+  border: 0;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  padding: 13px 17px;
+  width: 70%;
+  margin: 2rem auto 1rem auto; }
 
 /*# sourceMappingURL=style.css.map */
