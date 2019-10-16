@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap')
 $primary-font: 'Raleway', sans-serif
 $primary-color: #67649d
+$white-color: #ffffff
+$font-bold: 900
 
 h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
   margin: 0
@@ -16,17 +18,16 @@ body
   min-height: 100vh
   font-family: $primary-font
 
+
 .title-sections
   font-weight: 900
   font-size: 35px
-  //margin-bottom: 45px
   margin-bottom: 2rem
   margin-top: 4rem
   color: $primary-color
   text-align: center
   text-transform: uppercase
   font-weight: 900
-  //margin-bottom: 4rem
 
 .section-bg-image
   background-image: url("../img/3-section.png")
@@ -37,61 +38,95 @@ body
   display: flex
   align-items: center
 
-.first-section
+
+
+.top-header
   background-image: url("../img/BG.png")
-  background-size: contain
-  background-repeat: no-repeat
-  min-height: 90vh
-  background-position: top center
-  .img-half-section
-    display: flex
-    align-items: center
-    justify-content: center
-    padding-left: 3%
-    img
-      width: 70%
-  .row
-    display: flex
-    align-items: center
-    justify-content: space-between
-    .col-md-12
-      display: flex
-      align-items: center
-      justify-content: space-between
-      padding: 50px 15px
-  .logo-left h3
+  min-height: 300px
+  background-position: center
+  background-size: cover
+  display: flex
+  //align-items: center
+  justify-content: center
+  flex-direction: column
+  color: $white-color
+  .navbar
+    padding: 0
+  .navbar-brand
     text-transform: uppercase
     color: #ffffff
     font-family: $primary-font
     font-weight: 800
     cursor: pointer
-  .menu-right
-    ul
-      display: flex
-      margin-bottom: 0
-      li
-        list-style-type: none
-        margin: 0 20px
-        cursor: pointer
-        h6
-          color: white
-          font-family: $primary-font
-          text-transform: capitalize
-          font-size: 18px
-  .text-half-section
-    color: #ffffff
-    font-family: $primary-font
-    width: 36%
-    padding: 15px
-    h2
-      font-weight: 900
-      font-size: 35px
-      margin-bottom: 55px
-      text-transform: uppercase
-    h6
+    padding-top: 0
+    padding-bottom: 0rem
+  .navbar-nav
+    .nav-link
+      color: $white-color
       font-size: 17px
       line-height: 28px
       margin-bottom: 38px
+
+.navbar-light .navbar-toggler
+  border: none
+  outline: none
+
+@media (min-width: 600px)
+  .top-header
+    min-height: 700px
+
+@media (min-width: 1500px)
+  .top-header
+    min-height: 900px
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover
+  color: $white-color
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+  color: $white-color
+
+.first-section
+  margin-bottom: 7rem
+
+.text-half-section
+  color: #ffffff
+  font-family: $primary-font
+  padding-top: 3.5rem
+  h2
+    font-weight: 900
+    font-size: 35px
+    margin-bottom: 55px
+    text-transform: uppercase
+  h6
+    font-size: 17px
+    line-height: 28px
+    margin-bottom: 38px
+
+.img-half-section
+  text-align: center
+
+@media (max-width: 991px)
+  .navigation-wrap
+    padding-top: 2rem
+  .first-section
+    margin-bottom: 11rem
+  .img-half-section
+    margin-top: 5rem
+
+@media (max-width: 600px)
+  .img-half-section
+    margin-top: 3rem
+  .button-first-section-container
+    text-align: center
+
+@media (max-width: 366px)
+  .button-first-section-container
+    .button-first-section
+      padding: 13px 20px
+    .button-first-section-1
+      margin-right: 0
+      margin-bottom: 2rem
+
 .button-first-section
   color: $primary-color
   background: white
@@ -104,6 +139,73 @@ body
     text-transform: uppercase
 .button-first-section-1
   margin-right: 25px
+
+.img-max
+  max-width: 500px
+  width: 100%
+
+// .first-section
+//   .img-half-section
+//     display: flex
+//     align-items: center
+//     justify-content: center
+//     padding-left: 3%
+//     img
+//       width: 70%
+//   .row
+//     display: flex
+//     align-items: center
+//     justify-content: space-between
+//     .col-md-12
+//       display: flex
+//       align-items: center
+//       justify-content: space-between
+//       padding: 50px 15px
+//   .logo-left h3
+//     text-transform: uppercase
+//     color: #ffffff
+//     font-family: $primary-font
+//     font-weight: 800
+//     cursor: pointer
+//   .menu-right
+//     ul
+//       display: flex
+//       margin-bottom: 0
+//       li
+//         list-style-type: none
+//         margin: 0 20px
+//         cursor: pointer
+//         h6
+//           color: white
+//           font-family: $primary-font
+//           text-transform: capitalize
+//           font-size: 18px
+//   .text-half-section
+//     color: #ffffff
+//     font-family: $primary-font
+//     width: 36%
+//     padding: 15px
+//     h2
+//       font-weight: 900
+//       font-size: 35px
+//       margin-bottom: 55px
+//       text-transform: uppercase
+//     h6
+//       font-size: 17px
+//       line-height: 28px
+//       margin-bottom: 38px
+// .button-first-section
+//   color: $primary-color
+//   background: white
+//   border-radius: 14px
+//   border: 0
+//   font-weight: 800
+//   font-family: $primary-font
+//   padding: 13px 17px
+//   .upper
+//     text-transform: uppercase
+// .button-first-section-1
+//   margin-right: 25px
 
 .second-section
   margin-bottom: 7%
@@ -389,16 +491,14 @@ body
   .choose-section-left
     margin-bottom: 3rem
 
+@media (max-width: 617px)
+  .choose-section-righ
+    .row
+      margin-right: 15px
+      margin-left: 15px
 
 .footer-section
   background-image: url("../img/footer.png")
-  // background-size: contain
-  // background-repeat: no-repeat
-  // min-height: 90vh
-  // background-position: bottom center
-  // display: flex
-  // align-items: center
-  min-height: 90vh
   background-position: center
   background-size: cover
   display: flex
@@ -462,58 +562,58 @@ body
   .title-sections-footer
     margin-top: 50%
 
-@media (max-width: 1365px)
-  .first-section, .section-bg-image
-    background-size: cover
-    .col-md-7.img-half-section
-      justify-content: flex-end
+// @media (max-width: 1365px)
+//   .first-section, .section-bg-image
+//     background-size: cover
+//     .col-md-7.img-half-section
+//       justify-content: flex-end
 
-@media (min-width: 769px) and (max-width: 1000px)
-  .first-section
-    .col-md-7.img-half-section
-      -ms-flex: 0 0 41.666667%
-      flex: 0 0 41.666667%
-      max-width: 41.666667%
-      img
-        width: 100%
-    .text-half-section.col-md-5
-      -ms-flex: 0 0 58.333333%
-      flex: 0 0 58.333333%
-      max-width: 58.333333%
+// @media (min-width: 769px) and (max-width: 1000px)
+//   .first-section
+//     .col-md-7.img-half-section
+//       -ms-flex: 0 0 41.666667%
+//       flex: 0 0 41.666667%
+//       max-width: 41.666667%
+//       img
+//         width: 100%
+//     .text-half-section.col-md-5
+//       -ms-flex: 0 0 58.333333%
+//       flex: 0 0 58.333333%
+//       max-width: 58.333333%
 
-  #features p
-    padding: 0 3%
+//   #features p
+//     padding: 0 3%
 
 
 
-@media (max-width: 768px)
-  .first-section .row
-    justify-content: center
-    flex-direction: column
+// @media (max-width: 768px)
+//   .first-section .row
+//     justify-content: center
+//     flex-direction: column
 
-  .first-section
-    min-height: 110vh
-    .col-md-7.img-half-section, .text-half-section.col-md-5
-      -ms-flex: 0 0 100%
-      flex: 0 0 100%
-      max-width: 100%
-      width: 100%
-      img
-        width: 60%
-    .col-md-7.img-half-section
-      justify-content: center
+//   .first-section
+//     //min-height: 110vh
+//     .col-md-7.img-half-section, .text-half-section.col-md-5
+//       -ms-flex: 0 0 100%
+//       flex: 0 0 100%
+//       max-width: 100%
+//       width: 100%
+//       img
+//         width: 60%
+//     .col-md-7.img-half-section
+//       justify-content: center
 
-  .choose-section.mb-5 .h-100.justify-content-center
-    align-items: center
-    img
-      width: 55%
-      margin-bottom: 30px
+//   .choose-section.mb-5 .h-100.justify-content-center
+//     align-items: center
+//     img
+//       width: 55%
+//       margin-bottom: 30px
 
-@media (max-width: 375px)
-  .first-section .text-half-section h2
-    font-size: 26px
-    margin-bottom: 25px
-  .button-first-section-1
-    margin-right: 5px
-  .button-first-section
-    padding: 13px
+// @media (max-width: 375px)
+//   .first-section .text-half-section h2
+//     font-size: 26px
+//     margin-bottom: 25px
+//   .button-first-section-1
+//     margin-right: 5px
+//   .button-first-section
+//     padding: 13px
