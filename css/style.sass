@@ -283,7 +283,11 @@ body
 .button-third-section
   background-color: $primary-color
   color: #ffffff
-  width: 37%
+  //width: 37%
+
+@media (max-width: 768px)
+    .button-third-section-container
+      text-align: center
 
 @media (max-width: 768px)
   .second-section .support h2
@@ -513,11 +517,11 @@ body
   .choose-section-left
     margin-bottom: 3rem
 
-@media (max-width: 617px)
-  .choose-section-righ
+@media (max-width: 700px)
+  .choose-section
     .row
-      margin-right: 15px
-      margin-left: 15px
+      padding-right: 10px
+      padding-left: 10px
 
 .footer-section
   background-image: url("../img/footer.png")
