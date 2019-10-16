@@ -18,6 +18,33 @@ body
   min-height: 100vh
   font-family: $primary-font
 
+.jumbotron
+  background-image: url(../img/3-section.png)
+  min-height: 300px
+  background-position: center
+  background-size: cover
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background-color: transparent
+
+@media (min-width: 600px)
+  .jumbotron
+    min-height: 500px
+
+
+@media (min-width: 1100px)
+  .jumbotron
+    min-height: 900px
+
+@media (min-width: 1100px)
+  .jumbotron
+    min-height: 1000px
+
+@media (min-width: 1400px)
+  .jumbotron
+    min-height: 1200px
 
 .title-sections
   font-weight: 900
@@ -384,13 +411,7 @@ body
 .bold
   font-weight: bold
 .pricing-section
-  //background-image: url("../img/3-section.png")
-  background-size: contain
-  background-repeat: no-repeat
-  min-height: 110vh
-  background-position: top center
-  display: flex
-  align-items: center
+  margin-bottom: 3rem
   color: $primary-color
 
 .pricing
@@ -432,6 +453,7 @@ body
     padding: 13px 17px
     width: 55%
     margin: 2rem auto 1rem auto
+    white-space: nowrap
 
 .numbers-section-items
   background: #FFFFFF
