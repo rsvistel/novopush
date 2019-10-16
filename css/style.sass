@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap')
 $primary-font: 'Raleway', sans-serif
 $primary-color: #67649d
+$white-color: #ffffff
+$font-bold: 900
 
 h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
   margin: 0
@@ -16,17 +18,42 @@ body
   min-height: 100vh
   font-family: $primary-font
 
+.jumbotron
+  background-image: url(../img/3-section.png)
+  min-height: 300px
+  background-position: center
+  background-size: cover
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background-color: transparent
+
+@media (min-width: 600px)
+  .jumbotron
+    min-height: 500px
+
+@media (min-width: 1100px)
+  .jumbotron
+    min-height: 900px
+
+@media (min-width: 1100px)
+  .jumbotron
+    min-height: 1000px
+
+@media (min-width: 1400px)
+  .jumbotron
+    min-height: 1200px
+
 .title-sections
   font-weight: 900
   font-size: 35px
-  //margin-bottom: 45px
   margin-bottom: 2rem
   margin-top: 4rem
   color: $primary-color
   text-align: center
   text-transform: uppercase
   font-weight: 900
-  //margin-bottom: 4rem
 
 .section-bg-image
   background-image: url("../img/3-section.png")
@@ -37,61 +64,104 @@ body
   display: flex
   align-items: center
 
-.first-section
+.top-header
   background-image: url("../img/BG.png")
-  background-size: contain
-  background-repeat: no-repeat
-  min-height: 90vh
-  background-position: top center
-  .img-half-section
-    display: flex
-    align-items: center
-    justify-content: center
-    padding-left: 3%
-    img
-      width: 70%
-  .row
-    display: flex
-    align-items: center
-    justify-content: space-between
-    .col-md-12
-      display: flex
-      align-items: center
-      justify-content: space-between
-      padding: 50px 15px
-  .logo-left h3
+  min-height: 300px
+  background-position: center
+  background-size: cover
+  display: flex
+  //align-items: center
+  justify-content: center
+  flex-direction: column
+  color: $white-color
+  .navbar
+    padding: 0
+  .navbar-brand
     text-transform: uppercase
     color: #ffffff
     font-family: $primary-font
     font-weight: 800
     cursor: pointer
-  .menu-right
-    ul
-      display: flex
-      margin-bottom: 0
-      li
-        list-style-type: none
-        margin: 0 20px
-        cursor: pointer
-        h6
-          color: white
-          font-family: $primary-font
-          text-transform: capitalize
-          font-size: 18px
-  .text-half-section
-    color: #ffffff
-    font-family: $primary-font
-    width: 36%
-    padding: 15px
-    h2
-      font-weight: 900
-      font-size: 35px
-      margin-bottom: 55px
-      text-transform: uppercase
-    h6
+    padding-top: 0
+    padding-bottom: 0rem
+  .navbar-nav
+    .nav-link
+      color: $white-color
       font-size: 17px
       line-height: 28px
       margin-bottom: 38px
+
+.navbar-light .navbar-toggler
+  border: none
+  outline: none
+
+.custom-toggler .navbar-toggler-icon
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+@media (min-width: 600px)
+  .top-header
+    min-height: 700px
+
+@media (min-width: 1500px)
+  .top-header
+    min-height: 900px
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover
+  color: $white-color
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+  color: $white-color
+
+.first-section
+  margin-bottom: 7rem
+
+.text-half-section
+  color: #ffffff
+  font-family: $primary-font
+  padding-top: 3.5rem
+  h2
+    font-weight: 900
+    font-size: 35px
+    margin-bottom: 55px
+    text-transform: uppercase
+  h6
+    font-size: 17px
+    line-height: 28px
+    margin-bottom: 38px
+
+.img-half-section
+  text-align: center
+
+@media (max-width: 991px)
+  .navigation-wrap
+    padding-top: 2rem
+  .first-section
+    margin-bottom: 11rem
+  .img-half-section
+    margin-top: 6rem
+
+@media (max-width: 600px)
+  .img-half-section
+    margin-top: 3rem
+  .button-first-section-container
+    text-align: center
+  .first-section
+    margin-bottom: 5rem
+  .text-half-section
+    padding-top: 2rem
+    h2
+      margin-bottom: 30px
+    h6
+      margin-bottom: 28px
+
+@media (max-width: 366px)
+  .button-first-section-container
+    .button-first-section
+      padding: 13px 20px
+    .button-first-section-1
+      margin-right: 0
+      margin-bottom: 2rem
+
 .button-first-section
   color: $primary-color
   background: white
@@ -105,37 +175,34 @@ body
 .button-first-section-1
   margin-right: 25px
 
+.img-max
+  max-width: 700px
+  width: 100%
+
+@media (max-width: 991px)
+  .img-max
+    max-width: 500px
+    width: 100%
+
 .second-section
+  color: $primary-color
   margin-bottom: 7%
-  .support
-    h2
-      font-weight: 900
-      font-size: 35px
-      margin-top: 20px
-      margin-bottom: 45px
-      text-transform: uppercase
-      color: $primary-color
-      text-align: center
-  ul
-    display: flex
-    justify-content: center
-    li
-      list-style-type: none
-      margin-right: 80px
-      object
-        width: 75px
+  .second-section-card
+    text-align: center
+    img
+      margin-top: 2rem
+      max-width: 200px
+      width: 100%
+    h4
+      font-weight: $font-bold
+      padding-top: 2rem
+      font-size: 25px
 
 .third-section
   .text-half-third-section
     display: flex
     flex-direction: column
     justify-content: center
-    padding-top: 10%
-    h2
-      font-weight: 900
-      font-size: 35px
-      margin-bottom: 45px
-      text-transform: uppercase
     h5
       line-height: 30px
       font-weight: 400
@@ -143,58 +210,26 @@ body
       margin-bottom: 20px
     h2, h5
       font-family: $primary-font
-    h2
-      color: $primary-color
+    .title-sections
+      text-align: left
   .img-right-third-section
     display: flex
     align-items: center
     justify-content: center
-    img
-      width: 80%
+    .img-max
+      max-width: 600px
+      width: 100%
 .button-third-section
   background-color: $primary-color
   color: #ffffff
-  width: 37%
 
 @media (max-width: 768px)
-  .second-section .support h2
-    font-size: 27px
-
-  .second-section ul
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    padding: 0
-    li
-      margin-right: 25px
-      &:last-child
-        margin-right: 0
-      object
-        width: 65px
-
-  .third-section
-    min-height: 130vh
-    .img-right-third-section
-      margin-top: 30px
-      img
-        width: 100%
-
-@media (min-width: 769px) and (max-width: 1200px)
-  .third-section
-    .col-md-5.text-half-third-section
-      max-width: 60%
-      flex: 0 0 60%
-
-    .col-md-7.img-right-third-section
-      max-width: 39%
-      flex: 0 0 39%
-      img
-        width: 100%
-
-
-@media (max-width: 320px)
-  .second-section ul li object
-    width: 48px
+    .button-third-section-container
+      text-align: center
+    .third-section
+      .text-half-third-section
+        .title-sections
+          text-align: center
 
 #features
   h4
@@ -212,11 +247,11 @@ body
     font-family: Poppins, sans-serif
     font-weight: 100
     margin-bottom: 25px
-    padding: 0 17%
+    padding: 0 2rem
   .card-body
     padding: 1.5rem
   .padding-text
-    padding: 0 25%
+    //padding: 0 25%
   .row
     padding-top: 3rem
   .features-card
@@ -228,6 +263,8 @@ body
     margin-right: auto
     padding-bottom: 3rem
     max-height: 175px
+    max-width: 100px
+    width: 100%
 
 @media (max-width: 767px)
     .features-card
@@ -279,16 +316,13 @@ body
     .client
       .card
           margin-bottom: 2rem
+          .fa-star
+            font-size: 25px
+
 .bold
   font-weight: bold
 .pricing-section
-  //background-image: url("../img/3-section.png")
-  background-size: contain
-  background-repeat: no-repeat
-  min-height: 110vh
-  background-position: top center
-  display: flex
-  align-items: center
+  margin-bottom: 3rem
   color: $primary-color
 
 .pricing
@@ -330,6 +364,7 @@ body
     padding: 13px 17px
     width: 55%
     margin: 2rem auto 1rem auto
+    white-space: nowrap
 
 .numbers-section-items
   background: #FFFFFF
@@ -388,17 +423,20 @@ body
 @media (max-width: 991px)
   .choose-section-left
     margin-bottom: 3rem
+  h5
+    padding-right: 0
 
+@media (max-width: 700px)
+  .choose-section
+    .row
+      padding-right: 10px
+      padding-left: 10px
+  .choose-section-left
+    h5
+      padding-right: 0
 
 .footer-section
   background-image: url("../img/footer.png")
-  // background-size: contain
-  // background-repeat: no-repeat
-  // min-height: 90vh
-  // background-position: bottom center
-  // display: flex
-  // align-items: center
-  min-height: 90vh
   background-position: center
   background-size: cover
   display: flex
@@ -423,6 +461,10 @@ body
   color: #ffffff
   margin-bottom: 1.5rem
   margin-top: 10%
+
+.footer-section
+  .footer-section-secont-btn
+    padding: 17px 36px
 
 .footer-section-btn-box
   display: flex
@@ -462,58 +504,58 @@ body
   .title-sections-footer
     margin-top: 50%
 
-@media (max-width: 1365px)
-  .first-section, .section-bg-image
-    background-size: cover
-    .col-md-7.img-half-section
-      justify-content: flex-end
+// @media (max-width: 1365px)
+//   .first-section, .section-bg-image
+//     background-size: cover
+//     .col-md-7.img-half-section
+//       justify-content: flex-end
 
-@media (min-width: 769px) and (max-width: 1000px)
-  .first-section
-    .col-md-7.img-half-section
-      -ms-flex: 0 0 41.666667%
-      flex: 0 0 41.666667%
-      max-width: 41.666667%
-      img
-        width: 100%
-    .text-half-section.col-md-5
-      -ms-flex: 0 0 58.333333%
-      flex: 0 0 58.333333%
-      max-width: 58.333333%
+// @media (min-width: 769px) and (max-width: 1000px)
+//   .first-section
+//     .col-md-7.img-half-section
+//       -ms-flex: 0 0 41.666667%
+//       flex: 0 0 41.666667%
+//       max-width: 41.666667%
+//       img
+//         width: 100%
+//     .text-half-section.col-md-5
+//       -ms-flex: 0 0 58.333333%
+//       flex: 0 0 58.333333%
+//       max-width: 58.333333%
 
-  #features p
-    padding: 0 3%
+//   #features p
+//     padding: 0 3%
 
 
 
-@media (max-width: 768px)
-  .first-section .row
-    justify-content: center
-    flex-direction: column
+// @media (max-width: 768px)
+//   .first-section .row
+//     justify-content: center
+//     flex-direction: column
 
-  .first-section
-    min-height: 110vh
-    .col-md-7.img-half-section, .text-half-section.col-md-5
-      -ms-flex: 0 0 100%
-      flex: 0 0 100%
-      max-width: 100%
-      width: 100%
-      img
-        width: 60%
-    .col-md-7.img-half-section
-      justify-content: center
+//   .first-section
+//     //min-height: 110vh
+//     .col-md-7.img-half-section, .text-half-section.col-md-5
+//       -ms-flex: 0 0 100%
+//       flex: 0 0 100%
+//       max-width: 100%
+//       width: 100%
+//       img
+//         width: 60%
+//     .col-md-7.img-half-section
+//       justify-content: center
 
-  .choose-section.mb-5 .h-100.justify-content-center
-    align-items: center
-    img
-      width: 55%
-      margin-bottom: 30px
+//   .choose-section.mb-5 .h-100.justify-content-center
+//     align-items: center
+//     img
+//       width: 55%
+//       margin-bottom: 30px
 
-@media (max-width: 375px)
-  .first-section .text-half-section h2
-    font-size: 26px
-    margin-bottom: 25px
-  .button-first-section-1
-    margin-right: 5px
-  .button-first-section
-    padding: 13px
+// @media (max-width: 375px)
+//   .first-section .text-half-section h2
+//     font-size: 26px
+//     margin-bottom: 25px
+//   .button-first-section-1
+//     margin-right: 5px
+//   .button-first-section
+//     padding: 13px

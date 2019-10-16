@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,74 +13,92 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-<div class="first-section">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-12">
-                <div class="logo-left">
-                    <h3>novopush</h3>
-                </div>
-
-                <div class="menu-right">
-                    <ul>
-                        <li><h6>homepage</h6></li>
-                        <li><h6>log in</h6></li>
-                        <li><h6>sign up</h6></li>
-                    </ul>
+    <header class="top-header">
+        <div class="navigation-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <a class="navbar-brand" href="#" target="_blank">Novopush</a>
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Homepage</a>
+                                    </li>
+                                    <li class="nav-item  pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Log in</a>
+                                    </li>
+                                    <li class="nav-item pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-
-            <div class="text-half-section col-md-5">
-                <h2>Push notifications made affordable.</h2>
-                <h6>The #1 Web Push Notifications Service is here!
-                    Meet Novo Push, the most affordable Push
-                    Notification Service on the planet.</h6>
-
-                <button class="button-first-section button-first-section-1">Start for <span class="upper">free</span></button>
-                <button class="button-first-section">Contact <span class="upper">sales</span></button>
+        </div>
+        <div class="first-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5  col-xl-5">
+                        <div class="text-half-section">
+                            <h2>Push notifications made affordable.</h2>
+                            <h6>The #1 Web Push Notifications Service is here!
+                                            Meet Novo Push, the most affordable Push
+                                            Notification Service on the planet.</h6>
+                            <div class="button-first-section-container">
+                                <button class="button-first-section button-first-section-1">Start for <span class="upper">free</span></button>
+                                <button class="button-first-section">Contact <span class="upper">sales</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 offset-0 col-sm-12  col-md-12  col-lg-5 col-xl-5 offset-lg-2">
+                        <div class="img-half-section">
+                            <img class="img-max" src="img/Image.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </header>
 
-            <div class="col-md-7 img-half-section">
-                <img src="img/Image.png" alt="">
+    <div class="second-section">
+        <div class="container">
+            <h2 class="title-sections">We propose</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 second-section-card">
+                    <img src="img/icons-browsers/email.png" alt="">
+                    <h4>Email</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 second-section-card">
+                    <img src="img/icons-browsers/mobile.png" alt="">
+                    <h4>Mobile Push</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 second-section-card">
+                    <img src="img/icons-browsers/app.png" alt="">
+                    <h4>In-App</h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 second-section-card">
+                    <img src="img/icons-browsers/web.png" alt="">
+                    <h4>Web Push</h4>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="second-section">
-    <div class="container">
-        <div class="support">
-            <h2>Supports all Modern Browsers</h2>
-            <ul>
-                <li>
-                    <object data="img/icons-browsers/safari.svg"></object>
-                </li>
-
-                <li>
-                    <object data="img/icons-browsers/opera.svg"></object>
-                </li>
-
-                <li>
-                    <object data="img/icons-browsers/mozilla.svg"></object>
-                </li>
-
-                <li>
-                    <object data="img/icons-browsers/chrome.svg"></object>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div class="third-section section-bg-image">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 text-half-third-section">
-                <h2>What is Novo Push?</h2>
-                <h5>Novo Push is a modern Web Push
+    <div class="third-section">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5  col-xl-5 text-half-third-section">
+                        <h2 class="title-sections">What is Novo Push?</h2>
+                        <h5>Novo Push is a modern Web Push
                     Notification Service which is the most
                     affordable Push Notification Service on
                     the Planet. We offer a lot of tools
@@ -87,192 +106,195 @@
                     Our users experience well over 30% of CTR
                     which is highest in the industry. Features like Real
                     time Reporting, Pre-buit Templates and Schedule messages makes us the most desired Web Push Notification Service on the planet. </h5>
-                <button class="button-first-section button-third-section">Start for <span class="upper">free</span></button>
-            </div>
+                        <div class="button-third-section-container">
+                            <button class="button-first-section button-third-section">Start for <span class="upper">free</span></button>
+                        </div>
+                    </div>
 
-            <div class="col-md-7 img-right-third-section">
-                <img src="img/img-third-section.png" alt="">
+                    <div class="col-12 col-sm-12 col-md-12  col-lg-7  col-xl-7 img-right-third-section">
+                        <img class="img-max" src="img/img-third-section.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="features">
-    <div class="container">
-        <h2 class="title-sections">Awesome Feature</h2>
-        <h4>Sweet setup process</h4>
-        <p class="padding-text">We at Novopush, decided to make the setup process
-            as sweet and easy as possibe for our customers.</p>
-        <div class="row">
-            <div class="col-md-4 features-card">
-                <img src="img/easiest-to-setup.png" alt="">
-                <h4>Easiest<br> to setup</h4>
-                <p>The Novo Push Setup
-                    is extremely quick and easy. You need not worry if you are a complete beginner. The setup process takes less than 5 minutes</p>
-            </div>
-            <div class="col-md-4 features-card">
-                <img src="img/templates-to-choose.png" alt="">
-                <h4>Templates to choose <br>from</h4>
-                <p>We have a lot
-                    of pre-built templates which are designed by our product team. You can use and make changes to these templates to save yourself both time and efforts.</p>
-            </div>
-            <div class="col-md-4 features-card">
-                <img src="img/custom-branding.png" alt="">
-                <h4>Custom<br> Branding</h4>
-                <p>Are you fed up of these Push Notification Services branding all over
-                    your notifications and popups? Well, we offer customized branding to our users.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="client-section client section-bg-image">
+    <div id="features">
         <div class="container">
-            <h2 class="title-sections">What our Clients say</h2>
+            <h2 class="title-sections">Awesome Feature</h2>
+            <h4>Sweet setup process</h4>
+            <p class="padding-text">We at Novopush, decided to make the setup process as sweet and easy as possibe for our customers.</p>
             <div class="row">
-                    <div class="col-lg-4">
-                            <div class="card mb-5 mb-lg-0">
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase">Dr. Ramore</h5>
-                                <h6 class="card-date"><span class="period">15/11/19</span></h6>
-                                <p>
-                                    ``NovoPush is incredibly helpful with a front-facing user interface that non-devs can easily use, impeccable service, and the consistent system uptime that make delivering pushes reliable.``
-                                </p>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-muted"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                            <div class="card mb-5 mb-lg-0">
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase">Dr. Ramore</h5>
-                                <h6 class="card-date"><span class="period">15/11/19</span></h6>
-                                <p>
-                                    ``NovoPush is incredibly helpful with a front-facing user interface that non-devs can easily use, impeccable service, and the consistent system uptime that make delivering pushes reliable.``
-                                </p>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-muted"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                            <div class="card mb-5 mb-lg-0">
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase">Dr. Ramore</h5>
-                                <h6 class="card-date"><span class="period">15/11/19</span></h6>
-                                <p>
-                                    ``NovoPush is incredibly helpful with a front-facing user interface that non-devs can easily use, impeccable service, and the consistent system uptime that make delivering pushes reliable.``
-                                </p>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star star-muted"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 features-card">
+                    <img src="img/easiest-to-setup.png" alt="">
+                    <h4>Easiest<br> to setup</h4>
+                    <p>The Novo Push Setup is extremely quick and easy. You need not worry if you are a complete beginner. The setup process takes less than 5 minutes</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 features-card">
+                    <img src="img/templates-to-choose.png" alt="">
+                    <h4>Templates to choose <br>from</h4>
+                    <p>We have a lot of pre-built templates which are designed by our product team. You can use and make changes to these templates to save yourself both time and efforts.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 features-card">
+                    <img src="img/custom-branding.png" alt="">
+                    <h4>Custom<br> Branding</h4>
+                    <p>Are you fed up of these Push Notification Services branding all over your notifications and popups? Well, we offer customized branding to our users.</p>
+                </div>
             </div>
         </div>
     </div>
 
-<div class="pricing-section pricing">
-    <div class="container">
-        <h2 class="title-sections">Our Plans</h2>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center">Starter</h5>
-                    <h6 class="card-price text-center"><span class="period"><span class="bold">FREE</span> FOREVER</span></h6>
-                    <ul>
-                        <li>Upto <span class="bold">100k Subscribes</span></li>
-                        <li>Unlimited Apps</li>
-                        <li>Segment Create</li>
-                        <li>Community Access</li>
-                        <li class="text-muted">Scheduling</li>
-                        <li class="text-muted">Templates</li>
-                        <li class="text-muted">Team Support </li>
-                        <li class="text-muted">Customized branding</li>
-                    </ul>
-                    <a href="#" class="btn btn-block btn-primary text-uppercase button-pricing-section">Get Started</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                    <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center">Business</h5>
-                        <h6 class="card-price text-center"><span class="period"><span class="bold">$20</span>/ Month</span></h6>
-                        <ul>
-                            <li>Upto <span class="bold">1 Million Subscribers</span></li>
-                            <li>Unlimited Apps</li>
-                            <li>Segment Create</li>
-                            <li>Community Access</li>
-                            <li>Scheduling</li>
-                            <li>Templates</li>
-                            <li>Team Support</li>
-                            <li class="text-muted">Customized branding</li>
-                        </ul>
-                        <a href="#" class="btn btn-block btn-primary text-uppercase button-pricing-section">Get Started</a>
+    <div class="client-section client">
+        <div class="jumbotron">
+            <div class="container">
+                <h2 class="title-sections">What our Clients say</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Dr. Ramore</h5>
+                                <h6 class="card-date"><span class="period">15/11/19</span></h6>
+                                <p>
+                                    ``NovoPush is incredibly helpful with a front-facing user interface that non-devs can easily use, impeccable service, and the consistent system uptime that make delivering pushes reliable.``
+                                </p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star star-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Dr. Ramore</h5>
+                                <h6 class="card-date"><span class="period">15/11/19</span></h6>
+                                <p>
+                                    ``NovoPush is incredibly helpful with a front-facing user interface that non-devs can easily use, impeccable service, and the consistent system uptime that make delivering pushes reliable.``
+                                </p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star star-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Dr. Ramore</h5>
+                                <h6 class="card-date"><span class="period">15/11/19</span></h6>
+                                <p>
+                                    ``NovoPush is incredibly helpful with a front-facing user interface that non-devs can easily use, impeccable service, and the consistent system uptime that make delivering pushes reliable.``
+                                </p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star star-muted"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                    <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-center">Enterprise</h5>
-                        <h6 class="card-price text-center"><span class="period"><span class="bold">$99</span>/ Month</span></h6>
-                        <ul>
-                            <li>Upto <span class="bold">10 Million Subscribers</span></li>
-                            <li>Unlimited Apps</li>
-                            <li>Segment Create</li>
-                            <li>Community Access</li>
-                            <li>Scheduling</li>
-                            <li>Templates</li>
-                            <li>Team Support </li>
-                            <li>Customized branding</li>
-                        </ul>
-                        <a href="#" class="btn btn-block btn-primary text-uppercase button-pricing-section">Get Started</a>
-                    </div>
-                </div>
-            </div>
-         </div>
+        </div>
     </div>
-</div>
 
-<div class="numbers-section section-bg-image">
+    <div class="pricing-section pricing">
         <div class="container">
-            <h2 class="title-sections">A few numbers</h2>
+            <h2 class="title-sections">Our Plans</h2>
             <div class="row">
-                <div class="col-lg-12 numbers-section-items">
-                    <div class="row">
-                        <div class="col-lg-4 numbers-section-item">
-                            <img src="img/icons-numbers/subscribes.png" alt="">
-                            <div><span>77,809,770</span></div>
-                            <p>Websites <span>Subscribes</span></p>
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase text-center">Starter</h5>
+                            <h6 class="card-price text-center"><span class="period"><span class="bold">FREE</span> FOREVER</span></h6>
+                            <ul>
+                                <li>Upto <span class="bold">100k Subscribes</span></li>
+                                <li>Unlimited Apps</li>
+                                <li>Segment Create</li>
+                                <li>Community Access</li>
+                                <li class="text-muted">Scheduling</li>
+                                <li class="text-muted">Templates</li>
+                                <li class="text-muted">Team Support </li>
+                                <li class="text-muted">Customized branding</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase button-pricing-section">Get Started</a>
                         </div>
-                        <div class="col-lg-4 numbers-section-item">
-                            <img src="img/icons-numbers/sent.png" alt="">
-                            <div><span>36,674,003,588</span></div>
-                            <p>Notifications <span>Sent</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase text-center">Business</h5>
+                            <h6 class="card-price text-center"><span class="period"><span class="bold">$20</span>/ Month</span></h6>
+                            <ul>
+                                <li>Upto <span class="bold">1 Million Subscribers</span></li>
+                                <li>Unlimited Apps</li>
+                                <li>Segment Create</li>
+                                <li>Community Access</li>
+                                <li>Scheduling</li>
+                                <li>Templates</li>
+                                <li>Team Support</li>
+                                <li class="text-muted">Customized branding</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase button-pricing-section">Get Started</a>
                         </div>
-                        <div class="col-lg-4 numbers-section-item">
-                            <img src="img/icons-numbers/ctr.png" alt="">
-                            <div><span>30%</span></div>
-                            <p>Average <span>CTR</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase text-center">Enterprise</h5>
+                            <h6 class="card-price text-center"><span class="period"><span class="bold">$99</span>/ Month</span></h6>
+                            <ul>
+                                <li>Upto <span class="bold">10 Million Subscribers</span></li>
+                                <li>Unlimited Apps</li>
+                                <li>Segment Create</li>
+                                <li>Community Access</li>
+                                <li>Scheduling</li>
+                                <li>Templates</li>
+                                <li>Team Support </li>
+                                <li>Customized branding</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase button-pricing-section">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="numbers-section">
+        <div class="jumbotron">
+            <div class="container">
+                <h2 class="title-sections">A few numbers</h2>
+                <div class="row">
+                    <div class="col-lg-12 numbers-section-items">
+                        <div class="row">
+                            <div class="col-lg-4 numbers-section-item">
+                                <img src="img/icons-numbers/subscribes.png" alt="">
+                                <div><span>77,809,770</span></div>
+                                <p>Websites <span>Subscribes</span></p>
+                            </div>
+                            <div class="col-lg-4 numbers-section-item">
+                                <img src="img/icons-numbers/sent.png" alt="">
+                                <div><span>36,674,003,588</span></div>
+                                <p>Notifications <span>Sent</span></p>
+                            </div>
+                            <div class="col-lg-4 numbers-section-item">
+                                <img src="img/icons-numbers/ctr.png" alt="">
+                                <div><span>30%</span></div>
+                                <p>Average <span>CTR</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,55 +303,55 @@
     </div>
 
     <div class="choose-section mb-5">
-            <div class="container">
-                <h2 class="title-sections">Why choose Novopuch?</h2>
-                <div class="row">
-                        <div class="col-lg-6 choose-section-left">
-                                <h2>Huge Monthly Subscription costs</h2>
-                                <h5>Are you fed up of heavy bills at the end of the month due to your Push Notification service? Well, these days, Notification Services are not affordable at all. Well, Guess What? Not anymore. Novopush the is the most AFFORDABLE Push Notifications Service on the planet. We make sure that our users are able to afford what they deserve with Ease.</h5>
-                            </div>
-                            <div class=" col-12 col-lg-6 choose-section-right">
-                                <h2 class="choose-section-right-title">How much can you save?</h2>
-                               <div class="row">
-                                    <div class="col-md-4 col-lg-4">
-                                        <div class="h-100 d-flex justify-content-center flex-column">
-                                                <p>NovоPush</p>
-                                                <div><span>0$</span></div>
-                                                <img src="img/choose/1-dolar.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4">
-                                        <div class="h-100 d-flex justify-content-center flex-column">
-                                                <p>OneSignal</p>
-                                                <div><span>120$</span></div>
-                                                <img src="img/choose/one-signal.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-lg-4">
-                                        <div class="h-100 d-flex justify-content-center flex-column">
-                                                <p>LetReach</p>
-                                                <div><span>150$</span></div>
-                                                <img src="img/choose/let-reach.png" alt="">
-                                        </div>
-                                    </div>
-                               </div>
-                        </div>
+        <div class="container">
+            <h2 class="title-sections">Why choose Novopuch?</h2>
+            <div class="row">
+                <div class="col-lg-6 choose-section-left">
+                    <h2>Huge Monthly Subscription costs</h2>
+                    <h5>Are you fed up of heavy bills at the end of the month due to your Push Notification service? Well, these days, Notification Services are not affordable at all. Well, Guess What? Not anymore. Novopush the is the most AFFORDABLE Push Notifications Service on the planet. We make sure that our users are able to afford what they deserve with Ease.</h5>
                 </div>
-            </div>
-        </div>
-        <footer class="footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="title-sections title-sections-footer">Start sending nitifs today!</h2>
-                        <h4>Well get you going a matter of minutes!</h4>
-                        <div class="footer-section-btn-box">
-                            <button class="button-first-section button-first-section-1">
-                                Create account <span class="upper">Now</span></button>
-                            <button class="button-first-section">Ask us a question</button>
+                <div class=" col-12 col-lg-6 choose-section-right">
+                    <h2 class="choose-section-right-title">How much can you save?</h2>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <div class="h-100 d-flex justify-content-center flex-column">
+                                <p>NovоPush</p>
+                                <div><span>0$</span></div>
+                                <img src="img/choose/1-dolar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="h-100 d-flex justify-content-center flex-column">
+                                <p>OneSignal</p>
+                                <div><span>120$</span></div>
+                                <img src="img/choose/one-signal.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="h-100 d-flex justify-content-center flex-column">
+                                <p>LetReach</p>
+                                <div><span>150$</span></div>
+                                <img src="img/choose/let-reach.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title-sections title-sections-footer">Start sending nitifs today!</h2>
+                    <h4>Well get you going a matter of minutes!</h4>
+                    <div class="footer-section-btn-box">
+                        <button class="button-first-section button-first-section-1">
+                            Create account <span class="upper">Now</span></button>
+                        <button class="button-first-section footer-section-secont-btn">Ask us a question</button>
+                    </div>
+                </div>
+            </div>
             <div class="row footer-section-links">
                 <div class="col-lg-2 offset-md-0 offset-lg-1">
                     <ul>
@@ -341,17 +363,7 @@
                         <li>Pricing</li>
                     </ul>
                 </div>
-            <div class="col-lg-2">
-                    <ul>
-                        <li>Product</li>
-                        <li>Mobile Push</li>
-                        <li>Web Push</li>
-                        <li>Email</li>
-                        <li>In-App</li>
-                        <li>Pricing</li>
-                    </ul>
-                </div>
-            <div class="col-lg-2">
+                <div class="col-lg-2">
                     <ul>
                         <li>Product</li>
                         <li>Mobile Push</li>
@@ -362,30 +374,41 @@
                     </ul>
                 </div>
                 <div class="col-lg-2">
-                        <ul>
-                            <li>Product</li>
-                            <li>Mobile Push</li>
-                            <li>Web Push</li>
-                            <li>Email</li>
-                            <li>In-App</li>
-                            <li>Pricing</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                            <ul>
-                                <li>Product</li>
-                                <li>Mobile Push</li>
-                                <li>Web Push</li>
-                                <li>Email</li>
-                                <li>In-App</li>
-                                <li>Pricing</li>
-                            </ul>
-                        </div>
+                    <ul>
+                        <li>Product</li>
+                        <li>Mobile Push</li>
+                        <li>Web Push</li>
+                        <li>Email</li>
+                        <li>In-App</li>
+                        <li>Pricing</li>
+                    </ul>
                 </div>
-                <div class="row copyright">
-                    <span>Сopyright 2019 || Novo Push</span>
+                <div class="col-lg-2">
+                    <ul>
+                        <li>Product</li>
+                        <li>Mobile Push</li>
+                        <li>Web Push</li>
+                        <li>Email</li>
+                        <li>In-App</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li>Product</li>
+                        <li>Mobile Push</li>
+                        <li>Web Push</li>
+                        <li>Email</li>
+                        <li>In-App</li>
+                        <li>Pricing</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <div class="row copyright">
+                <span>Сopyright 2019 || Novo Push</span>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
