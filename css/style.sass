@@ -141,13 +141,23 @@ body
   .first-section
     margin-bottom: 11rem
   .img-half-section
-    margin-top: 5rem
+    margin-top: 6rem
+
 
 @media (max-width: 600px)
   .img-half-section
     margin-top: 3rem
   .button-first-section-container
     text-align: center
+  .first-section
+    margin-bottom: 5rem
+  .text-half-section
+    padding-top: 2rem
+    h2
+      margin-bottom: 30px
+    h6
+      margin-bottom: 28px
+
 
 @media (max-width: 366px)
   .button-first-section-container
@@ -171,28 +181,28 @@ body
   margin-right: 25px
 
 .img-max
-  max-width: 500px
+  max-width: 700px
   width: 100%
 
+@media (max-width: 991px)
+  .img-max
+    max-width: 500px
+    width: 100%
+
 .second-section
+  color: $primary-color
   margin-bottom: 7%
-  .support
-    h2
-      font-weight: 900
-      font-size: 35px
-      margin-top: 20px
-      margin-bottom: 45px
-      text-transform: uppercase
-      color: $primary-color
-      text-align: center
-  ul
-    display: flex
-    justify-content: center
-    li
-      list-style-type: none
-      margin-right: 80px
-      object
-        width: 75px
+  .second-section-card
+    text-align: center
+    img
+      margin-top: 2rem
+      max-width: 200px
+      width: 100%
+    h4
+      font-weight: $font-bold
+      padding-top: 2rem
+      font-size: 25px
+
 
 .third-section
   .text-half-third-section
@@ -200,11 +210,6 @@ body
     flex-direction: column
     justify-content: center
     padding-top: 10%
-    h2
-      font-weight: 900
-      font-size: 35px
-      margin-bottom: 45px
-      text-transform: uppercase
     h5
       line-height: 30px
       font-weight: 400
@@ -212,62 +217,66 @@ body
       margin-bottom: 20px
     h2, h5
       font-family: $primary-font
-    h2
-      color: $primary-color
+    .title-sections
+      text-align: left
   .img-right-third-section
     display: flex
     align-items: center
     justify-content: center
-    // img
-    //   width: 80%
+    .img-max
+      max-width: 600px
+      width: 100%
 .button-third-section
   background-color: $primary-color
   color: #ffffff
-  //width: 37%
 
 @media (max-width: 768px)
     .button-third-section-container
       text-align: center
+    .third-section
+      .text-half-third-section
+        .title-sections
+          text-align: center
 
-@media (max-width: 768px)
-  .second-section .support h2
-    font-size: 27px
+// @media (max-width: 768px)
+  // .second-section .support h2
+  //   font-size: 27px
 
-  .second-section ul
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    padding: 0
-    li
-      margin-right: 25px
-      &:last-child
-        margin-right: 0
-      object
-        width: 65px
+  // .second-section ul
+  //   display: flex
+  //   flex-wrap: wrap
+  //   align-items: center
+  //   padding: 0
+  //   li
+  //     margin-right: 25px
+  //     &:last-child
+  //       margin-right: 0
+  //     object
+  //       width: 65px
 
-  .third-section
-    min-height: 130vh
-    .img-right-third-section
-      margin-top: 30px
-      img
-        width: 100%
+  // .third-section
+  //   min-height: 130vh
+  //   .img-right-third-section
+  //     margin-top: 30px
+  //     img
+  //       width: 100%
 
-@media (min-width: 769px) and (max-width: 1200px)
-  .third-section
-    .col-md-5.text-half-third-section
-      max-width: 60%
-      flex: 0 0 60%
+// @media (min-width: 769px) and (max-width: 1200px)
+  // .third-section
+  //   .col-md-5.text-half-third-section
+  //     max-width: 60%
+  //     flex: 0 0 60%
 
-    .col-md-7.img-right-third-section
-      max-width: 39%
-      flex: 0 0 39%
-      img
-        width: 100%
+  //   .col-md-7.img-right-third-section
+  //     max-width: 39%
+  //     flex: 0 0 39%
+  //     img
+  //       width: 100%
 
 
-@media (max-width: 320px)
-  .second-section ul li object
-    width: 48px
+// @media (max-width: 320px)
+//   .second-section ul li object
+//     width: 48px
 
 #features
   h4
@@ -285,11 +294,11 @@ body
     font-family: Poppins, sans-serif
     font-weight: 100
     margin-bottom: 25px
-    padding: 0 17%
+    padding: 0 2rem
   .card-body
     padding: 1.5rem
   .padding-text
-    padding: 0 25%
+    //padding: 0 25%
   .row
     padding-top: 3rem
   .features-card
@@ -301,6 +310,8 @@ body
     margin-right: auto
     padding-bottom: 3rem
     max-height: 175px
+    max-width: 100px
+    width: 100%
 
 @media (max-width: 767px)
     .features-card
@@ -352,6 +363,10 @@ body
     .client
       .card
           margin-bottom: 2rem
+          .fa-star
+            font-size: 25px
+
+
 .bold
   font-weight: bold
 .pricing-section
@@ -456,12 +471,17 @@ body
 @media (max-width: 991px)
   .choose-section-left
     margin-bottom: 3rem
+  h5
+    padding-right: 0
 
 @media (max-width: 700px)
   .choose-section
     .row
       padding-right: 10px
       padding-left: 10px
+  .choose-section-left
+    h5
+      padding-right: 0
 
 .footer-section
   background-image: url("../img/footer.png")
@@ -489,6 +509,10 @@ body
   color: #ffffff
   margin-bottom: 1.5rem
   margin-top: 10%
+
+.footer-section
+  .footer-section-secont-btn
+    padding: 17px 36px
 
 .footer-section-btn-box
   display: flex
