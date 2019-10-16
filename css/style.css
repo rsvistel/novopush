@@ -189,8 +189,7 @@ body {
 .third-section .text-half-third-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 10%; }
+  justify-content: center; }
   .third-section .text-half-third-section h5 {
     line-height: 30px;
     font-weight: 400;
