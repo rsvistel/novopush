@@ -229,13 +229,17 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  width: 30%; }
 #features .features-description {
   margin-top: 1.4rem; }
 
 @media (max-width: 767px) {
   .features-card {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+
+  #features img {
+    width: 100px; } }
 .client-section {
   color: #67649d; }
   .client-section .row .col-lg-4 {
