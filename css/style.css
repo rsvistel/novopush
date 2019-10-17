@@ -314,7 +314,8 @@ body {
   margin: 0;
   margin-bottom: 1rem; }
   .pricing .card-price .period {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #000000; }
 .pricing ul li {
   margin-bottom: 1rem;
   list-style: none;
