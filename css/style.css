@@ -229,10 +229,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 3rem;
-  width: 35%; }
-#features .features-img-width {
-  width: 30%; }
+  padding-bottom: 3rem; }
 #features .features-description {
   margin-top: 1.4rem; }
 
