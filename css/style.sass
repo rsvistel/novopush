@@ -3,14 +3,18 @@ $primary-font: 'Raleway', sans-serif
 $primary-color: #67649d
 $white-color: #ffffff
 $font-bold: 900
-
-h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
-  margin: 0
-  padding: 0
+$title-font-size: 3vw
+$title-second-size: 1.8vw
+$text-font-size: 1.6vw
+$img-size: 90%
 
 html, body
   max-width: 100%
   overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer
+  margin: 0
+  padding: 0
 
 body
   padding: 0
@@ -45,6 +49,7 @@ body
   .jumbotron
     min-height: 1200px
 
+
 .title-sections
   font-weight: 900
   font-size: 35px
@@ -55,14 +60,14 @@ body
   text-transform: uppercase
   font-weight: 900
 
-.section-bg-image
-  background-image: url("../img/3-section.png")
-  background-size: contain
-  background-repeat: no-repeat
-  min-height: 110vh
-  background-position: top center
-  display: flex
-  align-items: center
+// .section-bg-image
+//   background-image: url("../img/3-section.png")
+//   background-size: contain
+//   background-repeat: no-repeat
+//   min-height: 110vh
+//   background-position: top center
+//   display: flex
+//   align-items: center
 
 .top-header
   background-image: url("../img/BG.png")
@@ -75,7 +80,7 @@ body
   flex-direction: column
   color: $white-color
   .navbar
-    padding: 0
+    //padding: 0
   .navbar-brand
     text-transform: uppercase
     color: #ffffff
@@ -102,9 +107,9 @@ body
   .top-header
     min-height: 700px
 
-@media (min-width: 1500px)
-  .top-header
-    min-height: 900px
+// @media (min-width: 1500px)
+//   .top-header
+//     min-height: 900px
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover
   color: $white-color
@@ -170,6 +175,7 @@ body
   font-weight: 800
   font-family: $primary-font
   padding: 13px 17px
+  outline: none
   .upper
     text-transform: uppercase
 .button-first-section-1
@@ -262,9 +268,10 @@ body
     margin-left: auto
     margin-right: auto
     padding-bottom: 3rem
-    max-height: 175px
-    max-width: 100px
-    width: 100%
+    //max-height: 175px
+    // max-width: 100px
+    // width: 100%
+    width: 35%
 
 @media (max-width: 767px)
     .features-card
@@ -304,6 +311,10 @@ body
     .fa-star
       font-size: 30px
       margin: 0 4px
+
+  .star-block
+    display: inline
+    white-space: nowrap
 .numbers-section.section-bg-image
   margin-top: -75px
   .title-sections
@@ -348,7 +359,7 @@ body
     margin-bottom: 1rem
     list-style: none
     text-align: center
-    font-size: 20px
+    font-size: 18px
 
   .text-muted
     opacity: 0.7
@@ -393,10 +404,6 @@ body
 
 .choose-section
   color: $primary-color
-  h2
-    font-weight: 900
-    font-size: 30px
-    padding-bottom: 2rem
 
 .choose-section-left
   padding-top: 1rem
@@ -419,6 +426,8 @@ body
     font-weight: 900
   .h-100 img
     margin-top: 25px
+  .choose-section-right-title
+    font-weight: $font-bold
 
 @media (max-width: 991px)
   .choose-section-left
@@ -499,6 +508,8 @@ body
     .button-first-section
       margin-right: 0
       margin-bottom: 2rem
+  .title-sections-footer
+    margin-top: 50%
 
 @media (max-width: 320px)
   .title-sections-footer
@@ -559,3 +570,124 @@ body
 //     margin-right: 5px
 //   .button-first-section
 //     padding: 13px
+
+@media (min-width: 1480px)
+  .container
+    max-width: 90%
+  .jumbotron
+    background-size: 100% 100%
+  .title-sections
+    font-size: $title-font-size
+    padding: 2vw 0
+  .navbar-brand
+    font-size: 1.9vw
+  .top-header
+    background-size: 100% 100%
+    .navbar
+      padding-top: 2vw
+    .navbar-nav
+      .nav-item
+        margin-left: 2vw!important
+        .nav-link
+          font-size: $text-font-size
+  .first-section
+    margin-bottom: 5vw
+    .text-half-section
+      h2
+        font-size: $title-font-size
+        padding: 2vw 0
+      h6
+        font-size: $text-font-size
+        line-height: 2vw
+        padding-bottom: 2vw
+  .button-first-section
+    font-size: 1.5vw
+    padding: 1vw 2vw
+    margin-right: 2vw
+  .img-max
+    max-width: $img-size
+    padding-top: 2vw
+  .img-icon
+    max-width: $img-size!important
+    padding-bottom: 1vw
+  .client
+    .card
+      .card-body
+        padding: 2vw 0 2vw 1vw
+        .fa-star
+            font-size: 2vw
+  .client-section
+    .card-title
+      font-size: $title-second-size!important
+    .card-date
+      font-size: 1.7vw!important
+      padding-top: 1vw
+  .button-third-section
+    margin-top: 1vw
+  #features
+    img
+      width: 30%
+    .features-img-width
+      width: 25%
+    .features-setup
+      padding: 1vw 0 2vw 0
+  .pricing-section
+    .card-body
+      padding: 2vw
+      .card-title
+        font-size: 2.3vw
+      .card-price
+        .period
+          display: inline-block
+          font-size: 1.7vw
+          padding: 1vw 0
+      ul
+        li
+          font-size: 1.7vw
+          padding: 0.5vw 0
+      .button-pricing-section
+          font-size: 1.5vw
+          padding: 1vw 2vw
+  .numbers-section-items
+    font-size: 1.7vw
+    img
+      width: 25%
+  .choose-section-left-title
+    padding-bottom: 1vw
+    font-size: 2vw
+  .choose-section-right-title
+    font-size: 2vw
+    padding-bottom: 2vw
+  .choose-section-right
+    padding: 2vw
+    p
+      font-size: 1.5vw
+    span
+      font-size: 1.5vw
+    .h-100
+      img
+        margin-bottom: 1vw
+  .title-second
+    font-size: $title-second-size!important
+    line-height: 2vw!important
+  .description
+    font-size: $text-font-size!important
+    line-height: 2.1vw!important
+  .footer-section
+    background-size: 100% 100%
+    .footer-section-secont-btn
+      padding: 1vw 3.1vw
+    ul
+      li
+        font-size: $text-font-size
+        padding: 0.5vw 0
+    .copyright
+        font-size: 1.5vw
+  .footer-section-btn-box
+    button
+      font-size: 1.7vw
+      padding: 1vw 2.3vw
+      margin-right: 2vw
+      margin-top: 1vw
+      margin-bottom: 1vw
+

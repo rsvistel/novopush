@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
-h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
-  margin: 0;
-  padding: 0; }
-
 html, body {
   max-width: 100%;
   overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6, p, ul, header, nav, section, footer {
+  margin: 0;
+  padding: 0; }
 
 body {
   padding: 0;
@@ -46,15 +46,6 @@ body {
   text-transform: uppercase;
   font-weight: 900; }
 
-.section-bg-image {
-  background-image: url("../img/3-section.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 110vh;
-  background-position: top center;
-  display: flex;
-  align-items: center; }
-
 .top-header {
   background-image: url("../img/BG.png");
   min-height: 300px;
@@ -64,8 +55,6 @@ body {
   justify-content: center;
   flex-direction: column;
   color: #ffffff; }
-  .top-header .navbar {
-    padding: 0; }
   .top-header .navbar-brand {
     text-transform: uppercase;
     color: #ffffff;
@@ -90,9 +79,6 @@ body {
 @media (min-width: 600px) {
   .top-header {
     min-height: 700px; } }
-@media (min-width: 1500px) {
-  .top-header {
-    min-height: 900px; } }
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
   color: #ffffff; }
 
@@ -157,7 +143,8 @@ body {
   border: 0;
   font-weight: 800;
   font-family: "Raleway", sans-serif;
-  padding: 13px 17px; }
+  padding: 13px 17px;
+  outline: none; }
   .button-first-section .upper {
     text-transform: uppercase; }
 
@@ -244,9 +231,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 3rem;
-  max-height: 175px;
-  max-width: 100px;
-  width: 100%; }
+  width: 35%; }
 
 @media (max-width: 767px) {
   .features-card {
@@ -285,6 +270,9 @@ body {
   .client .card .fa-star {
     font-size: 30px;
     margin: 0 4px; }
+.client .star-block {
+  display: inline;
+  white-space: nowrap; }
 
 .numbers-section.section-bg-image {
   margin-top: -75px; }
@@ -327,7 +315,7 @@ body {
   margin-bottom: 1rem;
   list-style: none;
   text-align: center;
-  font-size: 20px; }
+  font-size: 18px; }
 .pricing .text-muted {
   opacity: 0.7;
   text-decoration: line-through; }
@@ -370,10 +358,6 @@ body {
     border: none; } }
 .choose-section {
   color: #67649d; }
-  .choose-section h2 {
-    font-weight: 900;
-    font-size: 30px;
-    padding-bottom: 2rem; }
 
 .choose-section-left {
   padding-top: 1rem; }
@@ -395,6 +379,8 @@ body {
     font-weight: 900; }
   .choose-section-right .h-100 img {
     margin-top: 25px; }
+  .choose-section-right .choose-section-right-title {
+    font-weight: 900; }
 
 @media (max-width: 991px) {
   .choose-section-left {
@@ -470,7 +456,140 @@ body {
     margin: 0 auto; }
     .footer-section-btn-box .button-first-section {
       margin-right: 0;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+
+  .title-sections-footer {
+    margin-top: 50%; } }
 @media (max-width: 320px) {
   .title-sections-footer {
     margin-top: 50%; } }
+@media (min-width: 1480px) {
+  .container {
+    max-width: 90%; }
+
+  .jumbotron {
+    background-size: 100% 100%; }
+
+  .title-sections {
+    font-size: 3vw;
+    padding: 2vw 0; }
+
+  .navbar-brand {
+    font-size: 1.9vw; }
+
+  .top-header {
+    background-size: 100% 100%; }
+    .top-header .navbar {
+      padding-top: 2vw; }
+    .top-header .navbar-nav .nav-item {
+      margin-left: 2vw !important; }
+      .top-header .navbar-nav .nav-item .nav-link {
+        font-size: 1.6vw; }
+
+  .first-section {
+    margin-bottom: 5vw; }
+    .first-section .text-half-section h2 {
+      font-size: 3vw;
+      padding: 2vw 0; }
+    .first-section .text-half-section h6 {
+      font-size: 1.6vw;
+      line-height: 2vw;
+      padding-bottom: 2vw; }
+
+  .button-first-section {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    margin-right: 2vw; }
+
+  .img-max {
+    max-width: 90%;
+    padding-top: 2vw; }
+
+  .img-icon {
+    max-width: 90% !important;
+    padding-bottom: 1vw; }
+
+  .client .card .card-body {
+    padding: 2vw 0 2vw 1vw; }
+    .client .card .card-body .fa-star {
+      font-size: 2vw; }
+
+  .client-section .card-title {
+    font-size: 1.8vw !important; }
+  .client-section .card-date {
+    font-size: 1.7vw !important;
+    padding-top: 1vw; }
+
+  .button-third-section {
+    margin-top: 1vw; }
+
+  #features img {
+    width: 30%; }
+  #features .features-img-width {
+    width: 25%; }
+  #features .features-setup {
+    padding: 1vw 0 2vw 0; }
+
+  .pricing-section .card-body {
+    padding: 2vw; }
+    .pricing-section .card-body .card-title {
+      font-size: 2.3vw; }
+    .pricing-section .card-body .card-price .period {
+      display: inline-block;
+      font-size: 1.7vw;
+      padding: 1vw 0; }
+    .pricing-section .card-body ul li {
+      font-size: 1.7vw;
+      padding: 0.5vw 0; }
+    .pricing-section .card-body .button-pricing-section {
+      font-size: 1.5vw;
+      padding: 1vw 2vw; }
+
+  .numbers-section-items {
+    font-size: 1.7vw; }
+    .numbers-section-items img {
+      width: 25%; }
+
+  .choose-section-left-title {
+    padding-bottom: 1vw;
+    font-size: 2vw; }
+
+  .choose-section-right-title {
+    font-size: 2vw;
+    padding-bottom: 2vw; }
+
+  .choose-section-right {
+    padding: 2vw; }
+    .choose-section-right p {
+      font-size: 1.5vw; }
+    .choose-section-right span {
+      font-size: 1.5vw; }
+    .choose-section-right .h-100 img {
+      margin-bottom: 1vw; }
+
+  .title-second {
+    font-size: 1.8vw !important;
+    line-height: 2vw !important; }
+
+  .description {
+    font-size: 1.6vw !important;
+    line-height: 2.1vw !important; }
+
+  .footer-section {
+    background-size: 100% 100%; }
+    .footer-section .footer-section-secont-btn {
+      padding: 1vw 3.1vw; }
+    .footer-section ul li {
+      font-size: 1.6vw;
+      padding: 0.5vw 0; }
+    .footer-section .copyright {
+      font-size: 1.5vw; }
+
+  .footer-section-btn-box button {
+    font-size: 1.7vw;
+    padding: 1vw 2.3vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw; } }
+
+/*# sourceMappingURL=style.css.map */
